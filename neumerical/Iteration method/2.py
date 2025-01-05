@@ -9,4 +9,4 @@ for i in range(100):
     if abs(x_new - x)<tol:
         break
     x = x_new
-print(f'Root (Iteration method): {x}')
+print(f'Root (Iteration method): {x}') 

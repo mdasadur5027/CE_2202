@@ -1,37 +1,9 @@
 # 17.	Use math library to find height of a building up to 2 decimal places when user knows the distance of building from a point and the angle subtended by the building at that point
+import math as m
 
-# import secrets
+d = float(input('Enter distance (in m): '))
+angle = float(input('Enter Angle (in deg): '))
 
-# bruh = secrets.token_hex(10)
-# print(bruh)
+height = d* m.tan(m.radians(angle))
 
-# from pytrends.request import TrendReq
-
-# pytrends = TrendReq()
-# region = input("Enter your region: ")
-# trending = pytrends.trending_searches(pn=region)
-# print(trending)
-
-
-# x^2-3x+10 =0
-# a, b = -5, 5
-# c = (a+b)/2
-# tol = 1e-6
-# for i in range (100):
-#     if a**2-3*a+10 <0:
-#         if c**2-3*c+10>0:
-#             b = c
-#         else:
-#             a = c
-#     else:
-#         if c**2-3*c+10<0:
-#             b = c
-#         else:
-#             a = c
-#     if abs(a-b) <tol:
-#         break
-# x = (a+b)/2
-# print(f'Root is: {x}')
-i =2
-if i == 2:
-    raise ValueError("Erro!")
+print(f'The building height is {height} m')
